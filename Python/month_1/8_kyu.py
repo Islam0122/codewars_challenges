@@ -84,3 +84,41 @@
 # print(make_negative(0))
 # print(make_negative(1))
 
+""" name_shuffler """
+# def name_shuffler(str_):
+#     text = str_.split()
+#     return str(text[1])+" "+str(text[0])
+#
+# print(name_shuffler("john McClane"))
+
+""" no_boring_zeros """
+# def no_boring_zeros(n):
+#     x = ""
+#     for i in str(n):
+#          if i == '0':
+#              pass
+#          else:
+#              x += i
+#     return int(x)
+#
+# print(no_boring_zeros(506))
+
+
+"""multi_table"""
+# def multi_table(number):
+#     table = ""
+#     for i in range(1, 11):
+#         table += f"{i} * {number} = {i * number}\n"
+#     return table[:-1]
+#
+# print(multi_table(4))
+
+
+"""sp_eng"""
+# def sp_eng(sentence):
+#     if 'english' in sentence.lower():
+#         return True
+#     else:
+#         return False
+#
+# print(sp_eng("1234egn lis;h"))
