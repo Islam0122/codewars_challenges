@@ -122,3 +122,18 @@
 #         return False
 #
 # print(sp_eng("1234egn lis;h"))
+
+"""sum_arra"""
+# def sum_array(a:list):
+#     return sum(a)
+#
+# print(sum_array([1,2,3]))
+
+"""hoop_count"""
+# def hoop_count(n):
+#     if n >= 10:
+#         return "Great, now move on to tricks"
+#     return "Keep at it until you get it"
+#
+# print(hoop_count(5))
+
