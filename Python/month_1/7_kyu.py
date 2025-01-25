@@ -1,4 +1,7 @@
 """ filter_list """
+import itertools
+import math
+
 # def filter_list(l):
 #     res = []
 #     for i in l:
@@ -23,3 +26,20 @@
 #     return sum(on - off for on, off in bus_stops)
 #
 # print(number([[10,0],[3,5],[5,8]]))
+
+
+"""permutation_average"""
+# def permutation_average(n):
+#     res = []
+#     text = list(itertools.permutations(str(n)))
+#     for i in text:
+#         res2 = ""
+#         for j in list(i):
+#             res2 += j
+#         res.append(res2)
+#     res2 = []
+#     for i in res:
+#         res2.append(int(i))
+#     return round(sum(res2)/len(res))
+#
+# print(permutation_average(25)) # --> 39
