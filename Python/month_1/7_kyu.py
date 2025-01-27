@@ -1,7 +1,7 @@
-""" filter_list """
 import itertools
 import math
 
+""" filter_list """
 # def filter_list(l):
 #     res = []
 #     for i in l:
@@ -20,6 +20,7 @@ import math
 #     return (end - start + 1) * (start + end) // 2
 #
 # print(get_sum(-1,-2))
+
 
 """number"""
 # def number(bus_stops):
@@ -43,3 +44,35 @@ import math
 #     return round(sum(res2)/len(res))
 #
 # print(permutation_average(25)) # --> 39
+
+
+"""solution"""
+# def solution(text, ending):
+#     length = len(ending)
+#     if length <= len(text) and text[-length:] in ending:
+#         return True
+#     else:
+#         return False
+#
+#
+# print(solution("abc", "dabc"))
+
+
+"""square_digits"""
+# def square_digits(num):
+#     res=""
+#     for i in str(num):
+#         print(i)
+#         res+=str(int(i)**2)
+#     return int(res)
+#
+# print(square_digits(765)) ##493625
+
+"""odd_or_even"""
+# def odd_or_even(arr):
+#     if sum(arr) % 2 == 0:
+#         return "odd"
+#     return "even"
+#
+# print(odd_or_even([-37, 77, -95, 76, 20, -68, 9, -53, -67, -55, 48, -6, -41, -67, -38]))
+

@@ -1,44 +1,42 @@
-# def mix(s1, s2):
-#     words_s1 = []
-#     words_s2 = []
-#     for word in s1:
-#         for letter in word:
-#             if letter.isalpha():
-#                 words_s1.append(letter)
-#
-#     for word in s2:
-#         for letter in word:
-#             if letter.isalpha():
-#                 words_s2.append(letter)
-#
-#     counter_s1 = collections.Counter(words_s1).items()
-#     counter_s2 =  collections.Counter(words_s2).items()
-#     res = []
-#     for key_s1 in counter_s1:
-#         for key_s2 in counter_s2:
-#             if key_s1[0] == key_s2[0]:
-#                 if key_s1[1] > key_s2[1]:
-#                     res.append(f"1:{key_s1[0]* key_s1[1]}/")
-#                 elif key_s1[1] < key_s2[1]:
-#                     res.append(f"2:{key_s2[0]* key_s2[1]}/")
-#                 elif key_s1[1] == key_s2[1]:
-#                     if len(key_s1[0] * key_s1[1]) > 1:
-#                         res.append(f"=:{key_s2[0]* key_s1[1]}/")
-#                 else:
-#                     if len(key_s1[0] * key_s1[1]) > 1:
-#                         res.append(f"=:{key_s2[0] * key_s1[1]}/")
-#
-#
-#
-#     start_num = ""
-#     start_letter = ""
-#     for i in sorted(res):
-#         if i[0] == "2" or i[0] == "1":
-#             start_num += i
-#         else:
-#             start_letter += i
-#     result = start_num + start_letter
-#     return result[:-1]
+""" factorial """
+def factorial(n):
+    if n < 0:
+        raise ValueError("Факториал определён только для неотрицательных чисел.")
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))
+
+# """RomanNumerals """
+# class RomanNumerals:
+#     dict_roman = {
+#         "M":1000,
+#         "CM":900,
+#         "D":500,
+#         "CD":400,
+#         "C":100,
+#         "XC":90,
+#         "L":50,
+#         "XL":40,
+#         "X":10,
+#         "IX":9,
+#         "V":5,
+#         "IV":4,
+#         "I":1
+#     }
+#     @staticmethod
+#     def to_roman(val : int) -> str:
+#         for i in RomanNumerals.dict_roman:
+#             if val == RomanNumerals.dict_roman[i]:
+#                 return i
+#     @staticmethod
+#     def from_roman(roman_num : str) -> int:
+#         res = []
+#         for i in roman_num:
+#             if i in RomanNumerals.dict_roman:
+#                 res.append(RomanNumerals.dict_roman[j])
+#         return sum(res)
 #
 #
-# print(mix("Are they here", "yes, they are here"))  # 2:eeeee/2:yy/=:hh/=:rr
+# print(RomanNumerals.from_roman(RomanNumerals.from_roman(["M"])))

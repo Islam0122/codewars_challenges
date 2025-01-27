@@ -137,3 +137,65 @@
 #
 # print(hoop_count(5))
 
+"""smash"""
+# def smash(words):
+#     res = ""
+#     for word in words:
+#         res += f"{word} "
+#     return res[:-1]
+#
+#
+# print(smash(["hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello"]))
+
+
+"""maps"""
+# def maps(a):
+#     return list(map(lambda x: x + 1, a))
+#
+# print(maps([1,2,3]))
+
+
+"""solution"""
+# def solution(string):
+#     return string[::-1]
+# print(solution("hello world"))
+
+
+"""number_to_string"""
+# def number_to_string(num):
+#     return str(num)
+
+
+"""find_smallest_int"""
+# def find_smallest_int(arr):
+#     return min(arr)
+
+
+"""count_sheep"""
+# def count_sheep(n):
+#     res = ""
+#     for i in range(1, n + 1):
+#         if n > 0:
+#             res += f"{i} sheep..."
+#     return res
+# print(count_sheep(0))
+
+
+"""double_integer"""
+# def double_integer(i):
+#     return i*2
+
+
+"""make_upper_case"""
+# def make_upper_case(s):
+#     return s.upper()
+# print(make_upper_case("hello world"))
+
+
+"""count_positives_sum_negatives"""
+# def count_positives_sum_negatives(arr):
+#     pos = sum(1 for x in arr if x > 0)
+#     neg = sum(x for x in arr if x < 0)
+#     return [pos, neg] if len(arr) else []
+# print(count_positives_sum_negatives([1, 2, 3, 4, 5]))
+

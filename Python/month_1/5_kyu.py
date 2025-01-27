@@ -30,3 +30,15 @@ from functools import partial
 # def minus(y): return lambda x: x - y
 # def times(y): return lambda x: x * y
 # def divided_by(y): return lambda x: x // y
+
+
+"""generate_hashtag"""
+# def generate_hashtag(s):
+#     output = "#"
+#
+#     for word in s.split():
+#         output += word.capitalize()
+#
+#     return False if (len(s) == 0 or len(output) > 140) else output
+# print(generate_hashtag("I love love love love love love"))
+
